@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <!-- Referencia a jquery para inyectar informacion en  algunos elementos -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <!-- Referencia al API de GOOGLE MAPS -->
+  <script src="http://maps.google.com/maps/api/js?key=AIzaSyA-K7PhHDzZLKLawrtrfSb0wuJZ-udUAzU"></script>
+  <!-- Referencia al script de Gmaps -->
+  <script src="./js/gmaps.js"></script>
+  <!-- Referencia a bootstrap (es opcional) -->
+  <link rel="stylesheet" type="text/css" href="./style/bootstrap.css">
+  <!-- Referencia a la hoja de estilos  -->
+  <link rel="stylesheet" href="./style/style.css">
+  </style>
+</head>
+
+<body>
+  <!-- titulo -->
+  <div class="page-header" id="header">
+    <h1>GMaps Research</h1>
+    <p>Toque 2 puntos para saber la distancia y el tiempo de recorrido</p>
+  </div>
+
+  <!-- div para renderizar el mapa -->
+  <div id="map"></div>
+
+  <!-- div para despligue de información -->
+  <div>
+    <br />
+    <p id="distance"></p>
+    <p id="time"></p>
+  </div>
+
+  <!-- Referencia al js necesario para renderizar lo que se busca -->
+  <script src="./js/map.js"></script>
+</body>
+
+</html>
